@@ -1,0 +1,276 @@
+.hero {
+    position: relative;
+}
+
+.hero-bg img {
+    position: absolute;
+    right: 7rem;
+    width: 40%;
+    margin-top: -1rem;
+}
+
+.hero-head img {
+    position: relative;
+    width: 47rem;
+    margin-left: -123px;
+    margin-top: 2rem;
+    z-index: 2;
+}
+
+.plan p {
+    color: var(--hero-color);
+    padding: 3rem 0;
+    opacity: .7;
+}
+
+.plan-details {
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+.plan-details::before, .plan-details::after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 100%;
+    background: var(--btn-color);
+    right: 0;
+    border-radius: 0 30px 30px 0;
+}
+
+.plan-details p.title {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--main-font);
+}
+
+.plan-details .parent {
+    position: relative;
+    color: #777;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plan-details i.arrow-down {
+    color: var(--btn-color);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.plan-details .parts {
+    position: relative;
+    height: 100%;
+    border-right: 1px solid #5b769b;
+    padding: 1rem;
+}
+
+.plan-details .parts:last-child {
+    border-right: none;
+}
+
+.count {
+    margin-left: -5rem;
+}
+
+.count-btn {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    color: var(--btn-color);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.count-btn-disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.count #counting {
+    padding: 0 15px;
+}
+
+.submit {
+    cursor: pointer;
+}
+
+.submit-btn {
+    position: relative;
+    margin-left: 4rem;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.parent:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    flex-direction: column;
+    background: #f4f4f4;
+    color: rgba(28, 46, 70, .65);
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 150px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px;
+    margin-top: 0;
+    margin-left: -10px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    /* display: none; */
+}
+
+.dropdown li {
+    opacity: .7;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown span {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 12px;
+    background-color: var(--btn-color);
+    color: #fff;
+    font-size: 10px;
+    line-height: 15px;
+    opacity: 1;
+}
+
+.dropdown li:hover {
+    opacity: 1;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.destination .parent:hover .dropdown {
+    opacity: 1;
+}
+
+.departure .parent:hover .dropdown {
+   opacity: 1;
+}
+
+.voyage .parent:hover .dropdown {
+    opacity: 1;
+}
+
+.hero-btn {
+    position: relative;
+    float: left;
+    padding: 2rem 0;
+}
+
+.hero-btn i {
+    border: 1px solid #4c5366;
+    border-radius: 100%;
+    padding: 10px;
+    color: #4c5366;
+    font-size: 20px;
+}
+
+.hero-btn p {
+    color: #4c5366;
+    text-transform: uppercase;
+    background-color: #020615;
+    font-family: var(--main-font);
+    margin-left: -5px;
+}
+
+.social {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    bottom: -7rem;
+}
+
+.social li {
+    margin-top: 3rem;
+}
+
+.social li a:hover {
+    opacity: .8;
+}
+
+@media(max-width: 768px) {
+    .hero-head img {
+        width: 30rem;
+        margin-left: -5rem;
+        margin-top: -2rem;
+    }
+
+    .hero-bg img {
+        right: 2rem;
+        width: 55%;
+        margin-top: -8rem;
+    }
+
+    .plan-details {
+        height: 300px;
+    }
+
+    .plan-details.grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-details::before, .plan-details::after {
+        width: 100%;
+        height: 85px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .plan-details .parts:nth-child(1) {
+        border-bottom: 1px solid #5b769b;
+    }
+    .plan-details .parts:nth-child(2) {
+        border-bottom: 1px solid #5b769b;
+    }
+    
+
+    .plan-details .parts:nth-child(even) {
+        border-right: none;
+    }
+
+    .count {
+        margin-left: -13rem;
+        margin-top: -1rem;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    .submit-btn {
+        font-size: 25px;
+        
+    }
+
+    .social {
+        display: none;
+    }
+}

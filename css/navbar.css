@@ -1,0 +1,140 @@
+.navbar {
+    position: relative;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 16rem;
+    z-index: 2;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+}
+
+.nav-item li {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.nav-item a {
+    opacity: .7;
+    transition: all .3s ease-in-out;
+}
+
+.nav-item a:hover {
+    opacity: 1;
+}
+
+.main-nav a.booking {
+    opacity: 1;
+    font-weight: bold;
+    background-color: var(--btn-trans-color);
+    padding: 20px 40px;
+    transition: all .3s ease-in-out;
+    z-index: 100;
+}
+
+.main-nav a.booking:hover {
+    border: 1px solid #5b769b;
+}
+
+.nav-item .drop-down {
+    position: absolute;
+    flex-direction: column;
+    background: var(--btn-trans-color);
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px;
+    top: 20px;
+    left: -4rem;
+    width: 200px;
+    display: none;
+    z-index: 100;
+    transition: all .5s ease-in-out;
+}
+
+.nav-item li:hover .drop-down {
+    display: block;
+}
+
+.nav-item .drop-down-link {
+    display: block;
+}
+
+.nav-item .drop-down li {
+    padding: 10px;
+}
+
+@media(max-width: 768px) {
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background: var(--btn-trans-color);
+        margin-right: 10px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .menu-hamburger {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+    }
+    .menu-hamburger::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-10px);
+    }
+    .menu-hamburger::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        transform: translateY(10px);
+    }
+    .nav-item {
+        position: absolute;
+        display: block;
+        left: 20px;
+        top: 8rem;
+        width: 90%;
+        height: 200px;
+        background-color: var(--btn-trans-color);
+        z-index: 100;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    .nav-item.active {
+        opacity: 1;
+    }
+    .nav-item li {
+        padding: 15px 20px;
+    }
+    .nav-item .drop-down {
+        position: relative;
+        padding: 10px;
+        top: 20px;
+        left: 0;
+        width: 100%;
+    }
+    .destination-list a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .destination-list a i {
+        font-size: 25px;
+    }
+}

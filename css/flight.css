@@ -1,0 +1,207 @@
+.flight {
+    color: #000;
+    float: left;
+    margin-top: 104rem;
+}
+
+.flight-bg {
+    position: absolute;
+    width: 95%;
+    height: 61rem;
+    background-color: #fff;
+    z-index: -1;
+    right: 0;
+}
+
+.flight .massive-heading {
+    position: absolute;
+    font-size: 320px;
+    color: var(--massive-color);
+    font-family: var(--massive-font);
+    margin-left: 38rem;
+    margin-top: -247px;
+    font-weight: 400;
+}
+
+.flight .overview-details {
+    position: relative;
+    margin-left: 7rem;
+    transform: translateY(-110px);
+}
+
+.flight .overview-title {
+    color: var(--btn-color);
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 0;
+}
+
+.flight .overview-head {
+    font-size: 34px;
+    font-family: var(--massive-font);
+}
+
+.flight .overview-head span {
+    font-size: 52px;
+}
+
+.flight .overview .para p {
+    width: 100%;
+}
+
+.flight .overview p.last-para {
+    margin-left: 2rem;
+}
+
+.rocket {
+    position: absolute;
+    margin-top: 23rem;
+    margin-left: 15rem;
+}
+
+.rocket img {
+    width: 200px;
+}
+
+.rocket-img, .station, .moon-img {
+    position: relative;
+}
+
+.rocket-img img {
+    width: 70px;
+    z-index: 1;
+}
+
+.rocket-img span.circle-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px dashed hsla(0, 0%, 70%, .65);
+    border-radius: 100%;
+    margin-top: 75px;
+    margin-left: -35px;
+    z-index: -1;
+}
+
+.station img {
+    width: 150px;
+    transform: translateX(-3rem);
+}
+
+.station span.circle-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px dashed hsla(0, 0%, 70%, .65);
+    border-radius: 100%;
+    margin-top: 75px;
+    margin-left: -70px;
+    z-index: -1;
+}
+
+.moon-img img {
+    width: 250px;
+    transform: translateX(-5rem);
+}
+
+.moon-img span.circle-3 {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    border: 1px dashed hsla(0, 0%, 70%, .65);
+    border-radius: 100%;
+    margin-top: -10px;
+    margin-left: -90px;
+    z-index: -1;
+}
+
+.stage-description {
+    margin-left: -2rem;
+}
+
+.stage-description p {
+    color: rgba(84, 87, 92, .65);
+    border-bottom: 1px dashed hsla(0, 0%, 70%, .65);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.flight-related-img img {
+    position: absolute;
+    width: 300px;
+    margin-left: -20rem;
+}
+
+.flight-related-img .img-1 {
+    transform: translateX(-30rem);
+    margin-top: 50rem;
+    width: 450px;
+}
+
+.flight-related-img .img-2 {
+    margin-left: -48rem;
+    width: 450px;
+    transform: translateY(68rem);
+}
+
+.flight-related-img .img-3 {
+    right: 0;
+    width: 560px;
+    height: 480px;
+    transform: translateY(52.5rem);
+}
+
+@media(max-width: 768px) {
+    .flight {
+        margin-top: 120rem;
+    }
+
+    .flight-bg {
+        width: 100%;
+        height: 110rem;
+    }
+
+    .flight .massive-heading {
+        font-size: 300px;
+        margin-left: 1rem;
+    }
+
+    .flight .overview-details {
+        margin-left: -1rem;
+    }
+
+    .rocket {
+        padding-top: 50px;
+    }
+
+    .rocket.grid-5 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px 0;
+    }
+
+    .flight-related-img {
+        margin-top: 60rem;
+    }
+
+    .flight-related-img .img-1 {
+        transform: translateX(20rem);
+        margin-top: 42rem;
+        width: 300px;
+    }
+    
+    .flight-related-img .img-2 {
+        margin-left: 0;
+        width: 300px;
+        transform: translateY(54rem);
+    }
+    
+    .flight-related-img .img-3 {
+        right: 0;
+        width: 350px;
+        height: 250px;
+        transform: translateY(50rem);
+    }
+}

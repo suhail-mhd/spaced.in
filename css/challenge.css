@@ -1,0 +1,127 @@
+.challenge {
+    position: relative;
+    padding-top: 7rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.challenge .divider-1, .challenge .divider-2 {
+    margin-top: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.challenge .divider-2 {
+    margin-top: -33px;
+    margin-left: -72px;
+    width: 4rem;
+    height: 4px;
+}
+
+.challenge-head {
+    text-align: center;
+    transform: translateY(-1rem);
+}
+
+.challenge-head h4 {
+    font-size: 58px;
+    font-weight: 400;
+    font-family: var(--massive-font);
+    text-transform: uppercase;
+}
+
+.challenge .grid-4 {
+    gap: 20px;
+}
+
+.challenge-img {
+    margin-top: 5rem;
+}
+
+.challenge-img img {
+    width: 300px;
+}
+
+.challenge-img .img-1 {
+    width: 250px;
+}
+
+.challenge-img .img-2 {
+    width: 350px;
+}
+
+.challenge-img .img-3 {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.challenge-img .img-4 {
+    width: 250px;
+}
+
+.challenge-img .img-5 {
+    width: 150px;
+    margin-bottom: 15px;
+
+}
+
+.challenge-img .img-6 {
+    width: 100px;
+}
+
+.challenge .logo {
+    width: 20rem;
+    margin: auto;
+}
+
+.challenge nav {
+    margin-top: 1.5rem;
+}
+
+.challenge nav li {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    margin: 0 35px;
+    font-weight: 500;
+}
+
+.challenge nav li a:hover {
+    opacity: .8;
+}
+
+.challenge-foot {
+    padding: 5rem 0;
+}
+
+@media(max-width: 768px) {
+    .challenge-img .img-1 {
+        width: 150px;
+    }
+    
+    .challenge-img .img-2 {
+        width: 150px;
+    }
+    
+    .challenge-img .img-3 {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .challenge-img .img-4 {
+        width: 150px;
+    }
+    
+    .challenge-img .img-5 {
+        width: 150px;
+        margin-bottom: 15px;
+    
+    }
+    
+    .challenge-img .img-6 {
+        width: 100px;
+    }
+
+    .challenge .logo {
+        width: 18rem;
+        margin: auto;
+    }
+}

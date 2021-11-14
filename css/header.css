@@ -1,0 +1,15 @@
+header::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 65.5rem;
+    background: var(--border-color);
+    top: 45px;
+    left: 4rem;
+}
+
+@media(max-width: 768px) {
+    header::before {
+        display: none;
+    }
+}
