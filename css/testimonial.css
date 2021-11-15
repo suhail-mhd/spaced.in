@@ -203,3 +203,21 @@
     }
 
 }
+
+@media(max-width: 500px) {
+    .testimonial .divids {
+        transform: translateY(-1rem);
+        margin-left: 1rem;
+    }
+
+    .testimonial {
+        margin-top: 188rem;
+        margin-bottom: 3rem;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+}

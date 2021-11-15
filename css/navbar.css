@@ -111,17 +111,21 @@
         left: 20px;
         top: 8rem;
         width: 90%;
-        height: 200px;
+        height: 0;
         background-color: var(--btn-trans-color);
         z-index: 100;
-        opacity: 0;
         transition: all .3s ease-in-out;
     }
     .nav-item.active {
-        opacity: 1;
+       height: 200px;
+    }
+    .nav-item.active li {
+       display: block;
     }
     .nav-item li {
         padding: 15px 20px;
+        display: none;
+        transition: all .5s ease-in-out;
     }
     .nav-item .drop-down {
         position: relative;
@@ -136,5 +140,11 @@
     }
     .destination-list a i {
         font-size: 25px;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar .logo {
+        width: 12rem;
     }
 }

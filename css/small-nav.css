@@ -21,6 +21,10 @@
 }
 
 @media(max-width: 500px) {
+    .small-nav li {
+        font-size: 13px;
+    }
+
     .small-nav ul li {
         margin: 0;
     }

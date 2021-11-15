@@ -274,3 +274,28 @@
         display: none;
     }
 }
+
+@media(max-width: 500px) {
+    .hero-head img {
+        width: 22rem;
+        margin-left: -3.5rem;
+        margin-top: -2rem;
+    }
+
+    .hero-bg img {
+        right: 1rem;
+        width: 55%;
+        margin-top: -5rem;
+    }
+
+    .count {
+        margin-left: -5rem;
+        margin-top: -1rem;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+        float: left;
+        left: 0;
+    }
+}

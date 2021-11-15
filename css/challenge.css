@@ -125,3 +125,44 @@
         margin: auto;
     }
 }
+
+@media(max-width: 500px) {
+    .challenge-img .img-1 {
+        width: 100px;
+    }
+    
+    .challenge-img .img-2 {
+        width: 100px;
+    }
+    
+    .challenge-img .img-3 {
+        width: 100px;
+        margin-bottom: 15px;
+    }
+    
+    .challenge-img .img-4 {
+        width: 100px;
+    }
+    
+    .challenge-img .img-5 {
+        width: 100px;
+        margin-bottom: 15px;
+    
+    }
+    
+    .challenge-img .img-6 {
+        width: 50px;
+    }
+
+    .challenge .logo {
+        width: 15rem;
+    }
+
+    .challenge nav > ul {
+        flex-direction: column;
+    }
+
+    .challenge nav li {
+        margin: 5px 0;
+    }
+}

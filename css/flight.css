@@ -205,3 +205,39 @@
         transform: translateY(50rem);
     }
 }
+
+@media(max-width: 500px) {
+    .flight .massive-heading {
+        font-size: 160px;
+        margin-left: 5.5rem;
+        margin-top: -200px;
+    }
+
+    .flight .overview p.last-para {
+        margin-left: 0;
+    }
+
+    .rocket {
+        padding-top: 150px;
+        margin-left: 10rem;
+    }
+
+    .flight-related-img .img-1 {
+        transform: translateX(20rem);
+        margin-top: 45rem;
+        width: 200px;
+    }
+    
+    .flight-related-img .img-2 {
+        margin-left: 0;
+        width: 200px;
+        transform: translateY(53rem);
+    }
+    
+    .flight-related-img .img-3 {
+        right: 0;
+        width: 250px;
+        height: 200px;
+        transform: translateY(47rem);
+    }
+}

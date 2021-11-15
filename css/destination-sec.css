@@ -419,3 +419,63 @@
         left: -15rem;
     }
 }
+
+@media(max-width: 500px) {
+    .places img {
+        width: 100px;
+    }
+
+    .places img.active {
+        width: 120px;
+    }
+
+    .massive-heading {
+        font-size: 160px;
+        margin-left: -40px;
+        margin-top: -200px;
+    }
+
+    .overview-details .para.grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .related-images .img-1 {
+        margin-top: 48rem;
+        margin-left: -8rem;
+        width: 230px;
+        height: 280px;
+    }
+    
+    .related-images .img-2 {
+        width: 200px;
+        height: 140px;
+        margin-left: 1rem;
+       transform: translateY(1.5rem);
+    }
+    
+    .related-images .img-3 {
+        width: 200px;
+        height: 120px;
+        margin-left: 1rem;
+        transform: translateY(2rem);
+    }
+
+    .activities .divids {
+        transform: translateX(9rem);
+    }
+
+    .activity-head {
+        transform: translateX(4rem);
+    }
+
+    .cards img {
+        width: 45px;
+        transform: translateX(0);
+    }
+
+    .activity-btns {
+        transform: translateY(119rem);
+        left: -13rem;
+    }
+}
